@@ -10,9 +10,9 @@ const jetbrains = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" }
 
 export const metadata: Metadata = {
   title: "PANAVERSITY // AGENT ARCHITECT PORTFOLIO",
-  description: "Central hub for Hassaan Fisky's AI Agent hackathons. Building the future of autonomous systems.",
+  description: "Central hub for Amna Faraz's AI Agent hackathons. Building the future of autonomous systems.",
   openGraph: {
-    title: "Panaversity Hackathon Hub // Hassaan Fisky",
+    title: "Panaversity Hackathon Hub // Amna Faraz",
     description: "Multi-modal AI agents and cloud-native systems.",
     type: "website",
   }
