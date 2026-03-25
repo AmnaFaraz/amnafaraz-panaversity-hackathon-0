@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: hsl(0 0% 5%);
+  --color-foreground: hsl(0 0% 100%);
+  --color-card: hsl(0 0% 7%);
+  --color-card-foreground: hsl(0 0% 100%);
+  --color-popover: hsl(0 0% 7%);
+  --color-popover-foreground: hsl(0 0% 100%);
+  --color-primary: hsl(120 100% 50%);
+  --color-primary-foreground: hsl(0 0% 0%);
+  --color-secondary: hsl(300 100% 50%);
+  --color-secondary-foreground: hsl(0 0% 100%);
+  --color-muted: hsl(0 0% 12%);
+  --color-muted-foreground: hsl(0 0% 60%);
+  --color-accent: hsl(180 100% 50%);
+  --color-accent-foreground: hsl(0 0% 0%);
+  --color-destructive: hsl(0 84% 60%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(0 0% 20%);
+  --color-input: hsl(0 0% 20%);
+  --color-ring: hsl(120 100% 50%);
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(-45deg, #0D0D0D, #1A1A1A, #00FF0010, #FF00FF10);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.glow-hover:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
